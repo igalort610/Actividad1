@@ -1,6 +1,11 @@
 from datetime import datetime 
 
 año_actual = datetime.now().year 
+sueldo_base = 1000
+
+def añoactual(año_actual):
+    return año_actual
+
 
 def pedir_nombre():
     nombre = input("Nombre del empleado:")
@@ -22,13 +27,25 @@ def mostrar_mensaje_opcion_no_valida():
 
 def año_de_contratacion():
     año =  int(input("Año de contratación: ")) 
+    return año
 
 def año_no_posible(año):
-    peru = int(año_actual)
-    print("funciones_auxiliares::año_posible::",año, " - ", type(año))
-    print("funciones_auxiliares::año_posible::",peru, " - ", type(peru))
+
+    a1 = int(año)
+    a2 = int(año_actual)
+#    print("funciones_auxiliares::año_posible::",a1, " - ", type(a1))
+#    print("funciones_auxiliares::año_posible::",a2, " - ", type(a2))
      
-    return año <= peru 
+    return a1 > a2 
 
 def mostrar_mensaje_de_año_no_valido():
     print("El año seleccionado no es correcto debe ser un año igual  a " + año_actual + " o menor")
+    
+def sueldo_asalariado(a1,año): 
+    sueldo = sueldo_base + ((a1 - año) * 100)
+    return sueldo
+
+def comisiones()
+    comisiones = int(input("numerio de comiciones = "))
+    print ("este mes has vendido ", comisiones , "totales")
+    return comisiones 
