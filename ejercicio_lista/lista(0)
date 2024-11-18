@@ -1,0 +1,3 @@
+temperatura_ciudad = ["Malaga", 28, 16]
+variacion = (temperatura_ciudad[1])-(temperatura_ciudad[2])
+print("la variacion de temperatura en", temperatura_ciudad[0] ,variacion,"ºc")

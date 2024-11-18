@@ -31,4 +31,9 @@ def msg_año_imposible(n):
 def imprimir_linea():
     print("--" * 8)
     
-def     
+def imprimir_resultados(a,p,n):
+    
+    resultado = a(1+(p/100))**n
+    
+    print(""" cantidad 
+          "")    
