@@ -1,5 +1,5 @@
 def deposito():
-    a = int(input("Cantidad a ingresar (€): "))
+    a = float(input("Cantidad a ingresar (€): "))
     return a
 
 def deposito_inrreal(a):
@@ -9,7 +9,7 @@ def msg_deposito_incorrecto(a):
     print("Cantidad a ingresar (la cantidad a ingresar debe ser positiva): ",  f'{a:.2f}' )
 
 def taza():
-    p = int(input("Interés (%): "))
+    p = float(input("Interés (%): "))
     return p
 
 def taza_no_posible(p):
@@ -19,7 +19,7 @@ def msg_taza_no_posible(p):
     print("Tipo de interés (el tipo de intes debe ser positiva): ",  f'{p:.2f}')  
 
 def años():
-    n = int(input("Número de años: "))
+    n = float(input("Número de años: "))
     return n
 
 def años_no_posible(n):
@@ -29,11 +29,20 @@ def msg_año_imposible(n):
     print("Años de depósito (los años de depósito deben especificarse con un número positivo): " , f'{n:.2f}')
     
 def imprimir_linea():
-    print("--" * 8)
+    print("----" * 8)
     
+<<<<<<< HEAD
 def imprimir_resultados(a,p,n):
     
     resultado = a(1+(p/100))**n
     
     print(""" cantidad 
           "")    
+=======
+def imprimir_resultados(a,n,p):
+    
+    print("""Ingresos (€) : """, a ,""" 
+            Interés  (%) : """, p ,""" 
+            Años         : """, n ,"""    
+            Total    (€) : """, f'{(a (1 + ( p / 100 )) ** n):.2f}')
+>>>>>>> bacc314111238e8285d4638ce195bcf32bbb0b84
