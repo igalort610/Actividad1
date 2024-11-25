@@ -2,7 +2,7 @@
 numero = 1
 comercio = []
 nombre_comercial = input("introduzca el nombre de comercial: ")
-while (numero != 5):
+while (numero != 6):
     dia = ("x")
     if (numero == 1):
         dia = ("(L)")
@@ -16,4 +16,5 @@ while (numero != 5):
         dia = ("(V)")
     comercio.append(int(input(f"Venta{dia}:")))
     numero = numero +1
+
    

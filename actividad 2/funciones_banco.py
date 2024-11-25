@@ -30,19 +30,10 @@ def msg_año_imposible(n):
     
 def imprimir_linea():
     print("----" * 8)
-    
-<<<<<<< HEAD
+ 
 def imprimir_resultados(a,p,n):
     
     resultado = a(1+(p/100))**n
     
-    print(""" cantidad 
-          "")    
-=======
-def imprimir_resultados(a,n,p):
-    
-    print("""Ingresos (€) : """, a ,""" 
-            Interés  (%) : """, p ,""" 
-            Años         : """, n ,"""    
-            Total    (€) : """, f'{(a (1 + ( p / 100 )) ** n):.2f}')
->>>>>>> bacc314111238e8285d4638ce195bcf32bbb0b84
+    print(f""" sueldo total {resultado}  
+          """)    

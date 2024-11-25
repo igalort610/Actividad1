@@ -20,6 +20,6 @@ while (f.años_no_posible(n)):
     
 f.imprimir_linea()
 print (a , "        " , type(a))
-print (n , "            " , type(n))
-print (p, "       ", type (p))       
+print (n , "        " , type(n))
+print (p , "        ", type (p))       
 f.imprimir_resultados(a,n,p)
