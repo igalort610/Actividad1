@@ -33,7 +33,7 @@ def imprimir_linea():
  
 def imprimir_resultados(a,p,n):
     
-    resultado = a(1+(p/100))**n
+    resultado = a*(1+(p/100))**n
     
     print(f""" sueldo total {resultado}  
           """)    
