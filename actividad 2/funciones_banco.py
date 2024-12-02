@@ -35,5 +35,5 @@ def imprimir_resultados(a,p,n):
     
     resultado = a*(1+(p/100))**n
     
-    print(f""" sueldo total {resultado}  
+    print(f""" total a pagar '{resultado:.2f}')  
           """)    

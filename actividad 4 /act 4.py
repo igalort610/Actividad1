@@ -1,16 +1,16 @@
-España = {}
-provincia = "azul"
-while (provincia != "" ):
-    provincia = input("introduzca el nombre de la provincia: ")
-    muerto_covid = int(input(f"numero de muertos por covid en {provincia} :")) 
-    España[provincia] = muerto_covid
-    provincia = input("introduzca el nombre de la provincia: ")
-    
-print (España())
+numero_ingresado = {}
+numero = 0
+numero_longitud = 0
+while(numero != "END" ):
+        numero = input("introduce el numero que quieras añadir, si quieres terminar escriba END ")
+        if (numero.isdigit()): 
+                if numero in numero_ingresado:
+                        numero_ingresado [numero] += 1
+                else:
+                        numero_ingresado [numero] = 1
 
     
-    
-    
-    
+print(len(numero_ingresado))
+
     
     
